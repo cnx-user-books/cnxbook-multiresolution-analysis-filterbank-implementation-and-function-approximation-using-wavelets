@@ -1,0 +1,236 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/">
+  <title>Preliminaries</title>
+  <metadata>
+  <md:content-id>m17409</md:content-id><md:title>Preliminaries</md:title>
+  <md:abstract/>
+  <md:uuid>d666070a-904f-4916-a5ad-be3cb65356aa</md:uuid>
+</metadata>
+
+<content>
+    
+    
+    
+    
+      <para id="id2253778">We begin by recalling some basic notions of functional analysis. A measurable function <m:math><m:mi>f</m:mi></m:math> belongs to the Lebesgue space <m:math><m:mrow><m:msub><m:mi>L</m:mi><m:mi>p</m:mi></m:msub><m:mrow><m:mo>(</m:mo><m:mi mathvariant="normal">I</m:mi><m:mspace width="-0.166667em"/><m:mi mathvariant="normal">R</m:mi><m:mo>)</m:mo></m:mrow><m:mo>,</m:mo><m:mn>1</m:mn><m:mo>≤</m:mo><m:mi>p</m:mi><m:mo>&lt;</m:mo><m:mi>∞</m:mi></m:mrow></m:math> if</para>
+      <equation id="id2253842">
+        <m:math mode="display">
+          <m:mrow>
+            <m:msub>
+              <m:mrow>
+                <m:mo>|</m:mo>
+                <m:mo>|</m:mo>
+                <m:mi>f</m:mi>
+                <m:mo>|</m:mo>
+                <m:mo>|</m:mo>
+              </m:mrow>
+              <m:mi>p</m:mi>
+            </m:msub>
+            <m:mrow>
+              <m:mo>=</m:mo>
+              <m:mo>(</m:mo>
+            </m:mrow>
+            <m:msubsup>
+              <m:mo>∫</m:mo>
+              <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mi>∞</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>+</m:mo>
+                <m:mi>∞</m:mi>
+              </m:mrow>
+            </m:msubsup>
+            <m:msup>
+              <m:mrow>
+                <m:mo>|</m:mo>
+                <m:mi>f</m:mi>
+                <m:mrow>
+                  <m:mo>(</m:mo>
+                  <m:mi>x</m:mi>
+                  <m:mo>)</m:mo>
+                </m:mrow>
+                <m:mo>|</m:mo>
+              </m:mrow>
+              <m:mi>p</m:mi>
+            </m:msup>
+            <m:msup>
+              <m:mrow>
+                <m:mi>d</m:mi>
+                <m:mi>x</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mrow>
+                <m:mn>1</m:mn>
+                <m:mo>/</m:mo>
+                <m:mi>p</m:mi>
+              </m:mrow>
+            </m:msup>
+            <m:mo>&lt;</m:mo>
+            <m:mi>∞</m:mi>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2254175">A Hilbert space is a space where an inner product is defined. In particular, the space <m:math><m:mrow><m:msub><m:mi>L</m:mi><m:mn>2</m:mn></m:msub><m:mrow><m:mo>(</m:mo><m:mi mathvariant="normal">I</m:mi><m:mspace width="-0.166667em"/><m:mi mathvariant="normal">R</m:mi><m:mo>)</m:mo></m:mrow></m:mrow></m:math> is a Hilbert space, where the inner product of 2 functions <m:math><m:mi>f</m:mi></m:math> and <m:math><m:mi>g</m:mi></m:math> is defined as:</para>
+      <equation id="id2254232">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mo>&lt;</m:mo>
+            <m:mi>f</m:mi>
+            <m:mo>,</m:mo>
+            <m:mi>g</m:mi>
+            <m:mo>&gt;</m:mo>
+            <m:mo>=</m:mo>
+            <m:msubsup>
+              <m:mo>∫</m:mo>
+              <m:mrow>
+                <m:mo>-</m:mo>
+                <m:mi>∞</m:mi>
+              </m:mrow>
+              <m:mrow>
+                <m:mo>+</m:mo>
+                <m:mi>∞</m:mi>
+              </m:mrow>
+            </m:msubsup>
+            <m:mi>f</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:mi>x</m:mi>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mover>
+              <m:mrow>
+                <m:mi>g</m:mi>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>¯</m:mo>
+            </m:mover>
+            <m:mi>d</m:mi>
+            <m:mi>x</m:mi>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+      <para id="id2254301">In this presentation we work with functions defined on <m:math><m:mrow><m:mi mathvariant="normal">I</m:mi><m:mspace width="-0.166667em"/><m:mi mathvariant="normal">R</m:mi><m:mo>,</m:mo></m:mrow></m:math> but that take values in <m:math><m:mrow><m:mrow><m:mi>C</m:mi><m:mspace width="-0.166667em"/><m:mspace width="-0.166667em"/><m:mspace width="-0.166667em"/><m:mo>[</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>1</m:mn><m:mi>e</m:mi><m:mi>x</m:mi><m:mo>]</m:mo><m:mrow><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>05</m:mn><m:mi>e</m:mi><m:mi>m</m:mi></m:mrow><m:mrow><m:mn>1</m:mn><m:mo>.</m:mo><m:mn>25</m:mn><m:mi>e</m:mi><m:mi>x</m:mi></m:mrow><m:mspace width="0.277778em"/></m:mrow><m:mspace width="0.166667em"/><m:mo>.</m:mo></m:mrow></m:math> Hence <m:math><m:mover><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo></m:mrow><m:mo>¯</m:mo></m:mover></m:math> denotes the complex conjugate of <m:math><m:mrow><m:mi>g</m:mi><m:mo>(</m:mo><m:mi>x</m:mi><m:mo>)</m:mo><m:mo>.</m:mo></m:mrow></m:math>
+We say that 2 functions are orthogonal if their inner product is zero.
+A function is Hölder continuous of order <m:math><m:mrow><m:mi>α</m:mi><m:mo>,</m:mo><m:mo>(</m:mo><m:mn>0</m:mn><m:mo>&lt;</m:mo><m:mi>α</m:mi><m:mo>≤</m:mo><m:mn>1</m:mn><m:mo>)</m:mo></m:mrow></m:math> at point <m:math><m:mi>x</m:mi></m:math> if :</para>
+      <equation id="id2254474">
+        <m:math mode="display">
+          <m:mrow>
+            <m:mrow>
+              <m:mo>|</m:mo>
+              <m:mi>f</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>-</m:mo>
+              <m:mi>f</m:mi>
+              <m:mrow>
+                <m:mo>(</m:mo>
+                <m:mi>x</m:mi>
+                <m:mo>+</m:mo>
+                <m:mi>h</m:mi>
+                <m:mo>)</m:mo>
+              </m:mrow>
+              <m:mo>|</m:mo>
+            </m:mrow>
+            <m:mo>=</m:mo>
+            <m:mi>O</m:mi>
+            <m:mrow>
+              <m:mo>(</m:mo>
+              <m:msup>
+                <m:mi>h</m:mi>
+                <m:mi>α</m:mi>
+              </m:msup>
+              <m:mo>)</m:mo>
+            </m:mrow>
+            <m:mo>.</m:mo>
+          </m:mrow>
+        </m:math>
+      </equation>
+
+  </content>
+<bib:file>
+<bib:entry id="bid0">
+      <bib:book>
+<!--required fields-->
+        <bib:author>C.K. Chui</bib:author>
+        <bib:title>An Introduction to Wavelets</bib:title>
+        <bib:publisher>American Press</bib:publisher>
+        <bib:year>1992</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:series/>
+        <bib:address>San Diego, CA</bib:address>
+        <bib:edition/>
+        <bib:month/>
+        <bib:note/>
+      </bib:book>
+    </bib:entry>
+
+<bib:entry id="bid1">
+<bib:book>
+<bib:author>I. Daubechies</bib:author>
+<bib:title>Ten Lectures on wavelets</bib:title>
+<bib:publisher>Philadelphia: Society for Industrial and Applied Mathematics</bib:publisher>
+<bib:year>1992</bib:year>
+</bib:book>
+</bib:entry>
+
+ <bib:entry id="bid2">
+      <bib:article>
+<!--required fields-->
+        <bib:author>W. Härdle, G. Kerkyacharian, D. Picard, and A. Tsybekov</bib:author>
+        <bib:title>Wavelets, Approximation, and Statistical Applications</bib:title>
+        <bib:journal>Lectures notes in Statistics</bib:journal>
+        <bib:year>1998</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:number/>
+        <bib:pages/>
+        <bib:month/>
+        <bib:note/>
+      </bib:article>
+</bib:entry>
+
+ <bib:entry id="bid3">
+      <bib:article>
+<!--required fields-->
+        <bib:author>S. Mallat</bib:author>
+        <bib:title>A theory for multiresolution signal decomposition: the wavelet representation</bib:title>
+        <bib:journal>I.E.E.E Trans. on pattern analysis and machine intelligence</bib:journal>
+        <bib:year>1989</bib:year>
+<!--optional fields-->
+        <bib:volume>11</bib:volume>
+        <bib:number>7</bib:number>
+        <bib:pages>674-693</bib:pages>
+        <bib:month/>
+        <bib:note/>
+      </bib:article>
+</bib:entry>
+
+ <bib:entry id="bid4">
+      <bib:article>
+<!--required fields-->
+        <bib:author>Y. Meyer</bib:author>
+        <bib:title>Ondelettes et Opérateurs, I: Ondelettes, II: </bib:title>
+        <bib:journal>Operateurs de Calderón-Zygmund</bib:journal>
+        <bib:year>1990</bib:year>
+<!--optional fields-->
+        <bib:volume/>
+        <bib:number/>
+        <bib:pages/>
+        <bib:month/>
+        <bib:note/>
+      </bib:article>
+</bib:entry>
+
+
+
+</bib:file>
+
+</document>
